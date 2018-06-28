@@ -1,0 +1,24 @@
+server:
+  port: 8081
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          my-client-1:
+            client-id: my-client-1
+            client-secret: 12345678
+            client-name: ABC
+            provider: my-oauth-provider
+            scope: read
+            redirect-uri-template: http://localhost:8081/login/oauth2/code/callback
+            client-authentication-method: basic
+            authorization-grant-type: authorization_code
+        provider:
+          my-oauth-provider:
+            authorization-uri: http://localhost:8080/oauth/authorize
+            token-uri: http://localhost:8080/oauth/token
+logging:
+  level:
+    root: debug
