@@ -1,9 +1,9 @@
 server:
   port: 8081
-#  servlet:
-#    session:
-#      cookie:
-#        name: UISESSIONMEMBER
+  servlet:
+    session:
+      cookie:
+        name: UISESSIONMEMBER
 
 security:
   oauth2:
