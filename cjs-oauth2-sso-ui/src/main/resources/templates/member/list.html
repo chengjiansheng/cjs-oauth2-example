@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>会员系统</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+</head>
+
+<body>
+<div class="container">
+	<div class="col-sm-12">
+		<h1>会员查询</h1>
+		<h2>欢迎, <span th:text="${#authentication.name}">Name</span></h2>
+	</div>
+
+	<div>
+		<table class="table table-striped table-bordered table-hover" id="dataTables-example">
+			<thead>
+			<tr>
+				<th>会员昵称</th>
+				<th>会员编号</th>
+				<th>手机号</th>
+				<th>会员级别</th>
+				<th>注册时间</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr class="odd gradeX">
+				<td>苏九儿</td>
+				<td>1000</td>
+				<td>13112345678</td>
+				<td class="center">V5</td>
+				<td class="center">2018-07-10 12:00:00</td>
+			</tr>
+			<tr class="even gradeC">
+				<td>郭双</td>
+				<td>1001</td>
+				<td>15812346723</td>
+				<td class="center">V3</td>
+				<td class="center">2018-07-11 14:25:32</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+</body>
+</html>

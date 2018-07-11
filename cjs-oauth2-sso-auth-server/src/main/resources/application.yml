@@ -1,0 +1,12 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:mysql://10.123.52.189:3306/oh_coupon
+    username: devdb
+    password: d^V$0Fu!/6-<
+    driver-class-name: com.mysql.jdbc.Driver
+logging:
+  level:
+    root: debug
+

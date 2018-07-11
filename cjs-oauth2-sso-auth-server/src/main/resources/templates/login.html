@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- Bootstrap Core CSS -->
+    <link href="/assets/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+    <!-- Custom CSS -->
+    <link href="/assets/css/style.css" rel='stylesheet' type='text/css' />
+    <!-- Graph CSS -->
+    <link href="/assets/css/font-awesome.css" rel="stylesheet" type='text/css'>
+    <!-- lined-icons -->
+    <link href="/assets/css/icon-font.min.css" rel="stylesheet" type='text/css' />
+    <!--clock init-->
+</head> 
+<body>
+    <!--/login-->
+	<div class="error_page">
+        <div class="error-top">
+            <h2 class="inner-tittle page">XXX管理系统</h2>
+            <div class="login">
+                <h3 class="inner-tittle t-inner">Login</h3>
+                <form th:action="@{/login}" method="post">
+                    <input type="text" name="username" value="" placeholder="E-mail address" >
+                    <input type="password" name="password" value="" placeholder="Password">
+                    <div class="submit"><input type="submit" value="Login" ></div>
+                    <div class="clearfix"></div>
+
+                    <div class="new">
+                        <p><label class="checkbox11"><input type="checkbox" name="checkbox"><i> </i>Forgot Password ?</label></p>
+                        <p class="sign">Do not have an account ? <a href="sign.html">Sign Up</a></p>
+                        <div class="clearfix"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+	<!--//login-->
+    <!--js -->
+    <script type="text/javascript" src="/assets/js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.nicescroll.js"></script>
+    <script type="text/javascript" src="/assets/js/scripts.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+</body>
+</html>

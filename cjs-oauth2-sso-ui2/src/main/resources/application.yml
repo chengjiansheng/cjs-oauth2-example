@@ -1,0 +1,26 @@
+server:
+  port: 8082
+  servlet:
+    session:
+      cookie:
+        name: UISESSIONCOUPON
+
+security:
+  oauth2:
+    client:
+      client-id: CouponSystem
+      client-secret: 12345
+      access-token-uri: http://localhost:8080/oauth/token
+      user-authorization-uri: http://localhost:8080/oauth/authorize
+    resource:
+      user-info-uri: http://localhost:8080/user/me
+logging:
+  level:
+    root: debug
+spring:
+  thymeleaf:
+    cache: false
+
+
+
+

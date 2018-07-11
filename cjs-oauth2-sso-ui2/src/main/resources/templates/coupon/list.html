@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>营销系统</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+</head>
+
+<body>
+<div class="container">
+	<div class="col-sm-12">
+		<h1>优惠券列表</h1>
+		<h2>欢迎, <span th:text="${#authentication.name}">Name</span></h2>
+	</div>
+
+	<div>
+		<table class="table table-striped table-bordered table-hover" id="dataTables-example">
+			<thead>
+			<tr>
+				<th>优惠券名称</th>
+				<th>优惠券编号</th>
+				<th>数量</th>
+				<th>面值</th>
+				<th>适用范围</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr class="odd gradeX">
+				<td>新人注册大礼包</td>
+				<td>ABCDEF</td>
+				<td>不限</td>
+				<td class="center">50</td>
+				<td class="center">全场通用</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+</body>
+</html>
